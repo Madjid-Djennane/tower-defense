@@ -1,21 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
 
-public class Enemy : MonoBehaviour {
-
-    public NavMeshAgent agent;
-    public Transform target;
-
+public class Tower : MonoBehaviour
+{
     // Start is called before the first frame update
-    void Start(){
-        
+    void Start()
+    {
+        print("tower");
     }
 
     // Update is called once per frame
-    void Update() {
-        agent.SetDestination(target.position);
+    void Update()
+    {
+        
     }
 
     private void OnTriggerEnter(Collider other) {
